@@ -1,0 +1,24 @@
+---
+label: Palette
+hide_body: true
+is_partial: true
+fields:
+  - type: field_group
+    name: sass
+    label: SASS
+    fields:
+      - type: text
+        name: accent2
+        label: Accent 2
+      - type: text
+        name: accent3
+        label: Accent 3
+      - type: text
+        name: accent4
+        label: Accent 4
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: palette

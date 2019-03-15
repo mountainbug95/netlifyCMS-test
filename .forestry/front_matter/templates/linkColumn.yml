@@ -1,0 +1,28 @@
+---
+label: Link Column
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: Column title
+  - type: field_group_list
+    name: links
+    label: Links
+    description: Column links
+    config:
+      labelField: text
+    fields:
+      - type: text
+        name: text
+        label: Link text
+      - type: text
+        name: link
+        label: URL
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: linkColumn
